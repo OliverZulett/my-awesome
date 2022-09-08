@@ -145,6 +145,8 @@ client.connect_signal("request::titlebars", function(c)
 						layout_spacing = dpi(0),
 						bg_color_focus = beautiful.xcolor0,
 						bg_color = beautiful.lighter_xbackground,
+						-- bg_color_focus = "#01012b",
+						-- bg_color = "#01012b",
 						icon_shape = gears.shape.rectangle,
 					}),
 					bg = beautiful.darker_xbackground,

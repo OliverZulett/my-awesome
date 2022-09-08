@@ -16,6 +16,9 @@ local icons = require("icons")
 --- ░█▀█░█▀▀░▀▀█░░█░░█▀█░█▀▀░░█░░░█░░█░░░░░█░█░░█░░█░█░█▀█░░█░
 --- ░▀░▀░▀▀▀░▀▀▀░░▀░░▀░▀░▀▀▀░░▀░░▀▀▀░▀▀▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░░▀░
 
+-- cyberpunk
+
+
 --- Special
 theme.xforeground = "#D9D7D6"
 theme.darker_xbackground = "#000a0e"

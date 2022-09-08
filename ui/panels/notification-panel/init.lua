@@ -22,6 +22,7 @@ return function(s)
 		placement = function(w)
 			awful.placement.bottom_right(w, {
 				margins = { top = dpi(5), bottom = beautiful.wibar_height + dpi(5), left = dpi(5), right = dpi(5) },
+				-- margins = { top = beautiful.wibar_height + dpi(5), bottom = dpi(5), left = dpi(5), right = dpi(5) },
 			})
 		end,
 		widget = {

@@ -6,11 +6,11 @@ return {
 	--- Default Applications
 	default = {
 		--- Default terminal emulator
-		terminal = "alacritty",
+		terminal = "wezterm start --always-new-process",
 		--- Default music client
 		music_player = "wezterm start --class music ncmpcpp",
 		--- Default text editor
-		text_editor = "alacritty start nvim",
+		text_editor = "wezterm start nvim",
 		--- Default code editor
 		code_editor = "code",
 		--- Default web browser
@@ -18,7 +18,7 @@ return {
 		--- Default file manager
 		file_manager = "nautilus",
 		--- Default network manager
-		network_manager = "alacritty start nmtui",
+		network_manager = "wezterm start nmtui",
 		--- Default bluetooth manager
 		bluetooth_manager = "blueman-manager",
 		--- Default power manager

@@ -2,17 +2,17 @@ return {
 	widget = {
 		weather = {
 			--- API Key
-			key = "4cf2f732cb0ee901c51c92fc86d15b58",
+			key = "",
 			--- Coordinates
 			coordinates = {
-				"-16.500", --- lat
-				"-68.150", --- lon
+				"", --- lat
+				"", --- lon
 			},
 		},
 
 		--- Github activity
 		github = {
-			username = "OliverZulett",
+			username = "rxyhn",
 		},
 	},
 }

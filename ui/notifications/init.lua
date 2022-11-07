@@ -247,7 +247,6 @@ naughty.connect_signal("request::display", function(n)
 							timeout_arc,
 						},
 						margins = { top = dpi(5), bottom = dpi(5), left = dpi(15), right = dpi(15) },
-						-- margins = { top = beautiful.wibar_height + dpi(5), bottom = dpi(5), left = dpi(15), right = dpi(15) },
 						widget = wibox.container.margin,
 					},
 					bg = beautiful.notification_bg_alt,

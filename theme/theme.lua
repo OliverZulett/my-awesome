@@ -27,8 +27,14 @@ theme.icon_font = "Material Icons "
 --- ░█░░░█░█░█░░░█░█░█▀▄░▀▀█
 --- ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
 
+--- my theme
+theme.sea1 = "#06283D"
+theme.sea2 = "#256D85"
+theme.sea3 = "#47B5FF"
+theme.sea4 = "#DFF6FF"
+
 --- Special
-theme.white = "#edeff0"
+theme.white = "#DFF6FF"
 theme.darker_black = "#060809"
 theme.black = "#0c0e0f"
 theme.lighter_black = "#121415"
@@ -110,7 +116,7 @@ theme.press_event = "#ffffff" .. "15"
 theme.release_event = "#ffffff" .. "10"
 
 --- Widgets
-theme.widget_bg = "#1b1d1e"
+theme.widget_bg = theme.transparent
 
 --- Titlebars
 theme.titlebar_enabled = true
@@ -144,7 +150,7 @@ theme.titlebar_maximized_button_normal_inactive_hover = icon_dir .. "maximized_f
 theme.titlebar_maximized_button_focus_inactive_hover = icon_dir .. "maximized_focus_hover.svg"
 
 --- Wibar
-theme.wibar_bg = "#101213"
+theme.wibar_bg = theme.transparent
 theme.wibar_height = dpi(40)
 
 --- Music
@@ -163,7 +169,7 @@ theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "th
 --- theme.wallpaper = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/rocks.jpg")
 
 --- Image Assets
-theme.pfp = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/pfp.png")
+theme.pfp = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/yop.jpeg")
 theme.music = gears.surface.load_uncached(gfs.get_configuration_dir() .. "theme/assets/music.png")
 
 --- Layout
@@ -202,7 +208,7 @@ theme.snap_bg = theme.color8
 theme.snap_shape = helpers.ui.rrect(0)
 
 --- Main Menu
-theme.main_menu_bg = theme.lighter_black
+theme.main_menu_bg = theme.sea1
 
 --- Tooltip
 theme.tooltip_bg = theme.lighter_black
@@ -210,7 +216,7 @@ theme.tooltip_fg = theme.white
 theme.tooltip_font = theme.font_name .. "Regular 10"
 
 --- Hotkeys Pop Up
-theme.hotkeys_bg = theme.black
+theme.hotkeys_bg = theme.sea1 -- bg color of help page
 theme.hotkeys_fg = theme.white
 theme.hotkeys_modifiers_fg = theme.white
 theme.hotkeys_font = theme.font_name .. "Medium 12"

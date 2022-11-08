@@ -1,8 +1,9 @@
 require(... .. ".notifications")
 require(... .. ".popups")
 
-local decorations = require(... .. ".decorations")
-decorations.init()
+-- HERE IS DISABLE THE TITLE BAR FOR EACH WINDOW
+-- local decorations = require(... .. ".decorations")
+-- decorations.init()
 
 local top_panel = require(... .. ".panels.top-panel")
 local central_panel = require(... .. ".panels.central-panel")

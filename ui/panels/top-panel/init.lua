@@ -78,13 +78,13 @@ return function(s)
 					self:set_widget(indicator)
 
 					if c3.selected then
-						self.widget.children[1].bg = beautiful.accent
+						self.widget.children[1].bg = beautiful.sea4
 						self.indicator_animation:set(dpi(32))
 					elseif #c3:clients() == 0 then
-						self.widget.children[1].bg = beautiful.color8
+						self.widget.children[1].bg = beautiful.sea1
 						self.indicator_animation:set(dpi(8))
 					else
-						self.widget.children[1].bg = beautiful.accent
+						self.widget.children[1].bg = beautiful.sea3
 						self.indicator_animation:set(dpi(16))
 					end
 
@@ -102,13 +102,13 @@ return function(s)
 				end,
 				update_callback = function(self, c3, _)
 					if c3.selected then
-						self.widget.children[1].bg = beautiful.accent
+						self.widget.children[1].bg = beautiful.sea4
 						self.indicator_animation:set(dpi(32))
 					elseif #c3:clients() == 0 then
-						self.widget.children[1].bg = beautiful.color8
+						self.widget.children[1].bg = beautiful.sea1
 						self.indicator_animation:set(dpi(8))
 					else
-						self.widget.children[1].bg = beautiful.accent
+						self.widget.children[1].bg = beautiful.sea3
 						self.indicator_animation:set(dpi(16))
 					end
 				end,
@@ -117,7 +117,7 @@ return function(s)
 		})
 
 		local widget = widgets.button.elevated.state({
-			normal_bg = beautiful.widget_bg,
+			normal_bg = beautiful.transparent,
 			normal_shape = gears.shape.rounded_bar,
 			child = {
 				taglist,
@@ -272,7 +272,7 @@ return function(s)
 				right = dpi(10),
 				widget = wibox.container.margin,
 			},
-			bg = beautiful.wibar_bg,
+			bg = beautiful.transparent, --bg color for top panel
 			widget = wibox.container.background,
 		},
 	})

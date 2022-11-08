@@ -119,6 +119,7 @@ return function(s)
 						layout = wibox.layout.fixed.vertical,
 					},
 					layout = wibox.layout.fixed.vertical,
+					bg = beautiful.widget_bg,
 				},
 				{ ----------- MIDDLE GROUP -----------
 					{

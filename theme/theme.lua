@@ -28,16 +28,9 @@ theme.icon_font = "Material Icons "
 --- ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
 
 --- Special
-
-theme.sea1 = '#06283D'
-theme.sea2 = '#256D85'
-theme.sea3 = '#47B5FF'
-theme.sea4 = '#DFF6FF'
-theme.transparent = "#00000000"
-
 theme.white = "#edeff0"
 theme.darker_black = "#060809"
-theme.black = "#2a9d8f"
+theme.black = "#0c0e0f"
 theme.lighter_black = "#121415"
 theme.one_bg = "#161819"
 theme.one_bg2 = "#1f2122"
@@ -47,11 +40,12 @@ theme.grey_fg = "#3e4041"
 theme.grey_fg2 = "#484a4b"
 theme.light_grey = "#505253"
 
+theme.transparent = "#00000000"
 
 --- Black
 theme.color0 = "#232526"
 theme.color8 = "#2c2e2f"
- 
+
 --- Red
 theme.color1 = "#df5b61"
 theme.color9 = "#e8646a"
@@ -119,7 +113,7 @@ theme.release_event = "#ffffff" .. "10"
 theme.widget_bg = "#1b1d1e"
 
 --- Titlebars
-theme.titlebar_enabled = false
+theme.titlebar_enabled = true
 theme.titlebar_bg = theme.black
 theme.titlebar_fg = theme.white
 
@@ -150,7 +144,7 @@ theme.titlebar_maximized_button_normal_inactive_hover = icon_dir .. "maximized_f
 theme.titlebar_maximized_button_focus_inactive_hover = icon_dir .. "maximized_focus_hover.svg"
 
 --- Wibar
-theme.wibar_bg = "#0000000"
+theme.wibar_bg = "#101213"
 theme.wibar_height = dpi(40)
 
 --- Music

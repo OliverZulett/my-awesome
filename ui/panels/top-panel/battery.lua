@@ -18,7 +18,7 @@ return function()
 	local charging_color = beautiful.color6
 
 	local charging_icon = wibox.widget({
-		markup = helpers.ui.colorize_text("", beautiful.sea4),
+		markup = helpers.ui.colorize_text("", beautiful.white),
 		font = beautiful.icon_font .. "Round 14",
 		align = "center",
 		valign = "center",
@@ -33,7 +33,7 @@ return function()
 		paddings = dpi(2),
 		bar_shape = helpers.ui.rrect(2),
 		shape = helpers.ui.rrect(5),
-		color = beautiful.sea4,
+		color = beautiful.white,
 		background_color = beautiful.transparent,
 		border_color = beautiful.white,
 		widget = wibox.widget.progressbar,

@@ -78,14 +78,13 @@ return function(s)
 					self:set_widget(indicator)
 
 					if c3.selected then
-						-- self.widget.children[1].bg = beautiful.accent
-						self.widget.children[1].bg = beautiful.sea3
+						self.widget.children[1].bg = beautiful.accent
 						self.indicator_animation:set(dpi(32))
 					elseif #c3:clients() == 0 then
-						self.widget.children[1].bg = beautiful.sea2						
+						self.widget.children[1].bg = beautiful.color8
 						self.indicator_animation:set(dpi(8))
 					else
-						self.widget.children[1].bg = beautiful.sea1
+						self.widget.children[1].bg = beautiful.accent
 						self.indicator_animation:set(dpi(16))
 					end
 
@@ -103,13 +102,13 @@ return function(s)
 				end,
 				update_callback = function(self, c3, _)
 					if c3.selected then
-						self.widget.children[1].bg = beautiful.sea3
+						self.widget.children[1].bg = beautiful.accent
 						self.indicator_animation:set(dpi(32))
 					elseif #c3:clients() == 0 then
-						self.widget.children[1].bg = beautiful.sea2
+						self.widget.children[1].bg = beautiful.color8
 						self.indicator_animation:set(dpi(8))
 					else
-						self.widget.children[1].bg = beautiful.sea1
+						self.widget.children[1].bg = beautiful.accent
 						self.indicator_animation:set(dpi(16))
 					end
 				end,
@@ -118,7 +117,7 @@ return function(s)
 		})
 
 		local widget = widgets.button.elevated.state({
-			normal_bg = beautiful.transparent,
+			normal_bg = beautiful.widget_bg,
 			normal_shape = gears.shape.rounded_bar,
 			child = {
 				taglist,
@@ -164,7 +163,7 @@ return function(s)
 
 		local arrow = wbutton.text.state({
 			text_normal_bg = beautiful.accent,
-			normal_bg = beautiful.sea1,
+			normal_bg = beautiful.wibar_bg,
 			font = beautiful.icon_font .. "Round ",
 			size = 18,
 			text = "",
@@ -198,7 +197,7 @@ return function(s)
 
 		local widget = wbutton.elevated.state({
 			child = icon,
-			normal_bg = beautiful.sea1,
+			normal_bg = beautiful.wibar_bg,
 			on_release = function()
 				awesome.emit_signal("notification_panel::toggle", s)
 			end,
@@ -273,7 +272,7 @@ return function(s)
 				right = dpi(10),
 				widget = wibox.container.margin,
 			},
-			bg = beautiful.transparent,
+			bg = beautiful.wibar_bg,
 			widget = wibox.container.background,
 		},
 	})
